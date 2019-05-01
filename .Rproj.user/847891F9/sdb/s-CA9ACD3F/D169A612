@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "context('Kelly functions')\n\ntest_that('Kelly criterion for fair bets is 0', {\n    for (n in seq(2,20)){\n        expect_equal(kelly_criterion(1/n, n-1 ,1), 0)\n    }\n\n})\n\ntest_that('More certain bets should change fraction',\n          {\n              for (p in seq(0.02,0.98 )){\n                  expect_gt(kelly_back_dec(2,p+0.01, 0), kelly_back_dec(2,p, 0))\n              }\n\n              for (p in seq(0.02,0.98 )){\n                  expect_lt(kelly_lay_dec(2,p+0.01, 0), kelly_lay_dec(2,p, 0))\n              }\n          })\n\ntest_that('Commisions decrease betting fractions',{\n    for (n in seq(2,20)){\n        expect_lt(kelly_back_dec(n,1/n+0.01, 0.01),kelly_back_dec(n,1/n+0.01, 0.00))\n        expect_lt(kelly_lay_dec(n,1/n+0.01, 0.01),kelly_lay_dec(n,1/n+0.01, 0.00))\n    }\n})\n",
+    "created" : 1555791887466.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1853064940",
+    "id" : "D169A612",
+    "lastKnownWriteTime" : 1555793206,
+    "last_content_update" : 1555793206836,
+    "path" : "~/Documents/AllThingsR/RKelly/tests/testthat/test_kelly.R",
+    "project_path" : "tests/testthat/test_kelly.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

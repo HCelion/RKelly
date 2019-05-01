@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "context('Testing probability functions')\n\ntest_that('Probabilities sum up to one', {\n    probabilities <- seq(0,1, 0.1)\n    for (p in probabilities){\n        for (n in seq(1,10)){\n            expect_equal(chance_to_draw_n_games(p, n)+\n                             chance_to_win_n_games(p, n)+\n                             chance_to_win_n_games(1-p, n),1)\n        }\n    }\n})\n\ntest_that('More games give more certain results',{\n    p <- 0.51\n    for (n in seq(1,10)){\n        # Draws are only valid for even games\n        expect_gt(chance_to_win_n_games(p, n+2), chance_to_win_n_games(p, n))\n    }\n})\n\ntest_that('Draws are impossible for odd number of games',{\n    for (p in seq(0,1, 0.1)){\n        for (n in seq(1,10)){\n            expect_equal(chance_to_draw_n_games(p, 2*n+1),0)\n        }\n    }\n})\n\ntest_that('Draws are monotonically less likely', {\n    p <- 0.51\n    for (n in seq(1,10)){\n        expect_lt(chance_to_draw_n_games(p,2*(n+1)),chance_to_draw_n_games(p,2*n))\n    }\n})\n\ntest_that('Certain events are certain',{\n   p <- 0\n   for (n in seq(1,10)){\n       expect_equal(chance_to_draw_n_games(p, n),0)\n       expect_equal(chance_to_win_n_games(p, n),0)\n   }\n\n   p <- 1\n   for (n in seq(1,10)){\n       expect_equal(chance_to_draw_n_games(p, n),0)\n       expect_equal(chance_to_win_n_games(p, n),1)\n   }\n\n})\n",
+    "created" : 1555793083222.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "269915607",
+    "id" : "79204B02",
+    "lastKnownWriteTime" : 1555793092,
+    "last_content_update" : 1555793092989,
+    "path" : "~/Documents/AllThingsR/RKelly/tests/testthat/test_prob_functions.R",
+    "project_path" : "tests/testthat/test_prob_functions.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

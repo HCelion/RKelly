@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: RKelly\nType: Package\nTitle: Convenience functions to translate odds and probabilities\nVersion: 0.1.0\nAuthor: Arvid J. Kingl\nAuthors@R: \n    person(given = \"Arvid\",\n           family = \"Kingl\",\n           role = c(\"aut\", \"cre\"),\n           email = \"akingl2016@gmail.com\")\nDescription: Helps with standard calculations, such as the Kelly criterion\n    given bet prices and actual model probabilities.\nLicense: MIT\nEncoding: UTF-8\nLazyData: true\nRoxygenNote: 6.1.1\nSuggests: \n    testthat,\n    knitr,\n    rmarkdown\nVignetteBuilder: knitr\n",
+    "created" : 1555242043931.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4217371722",
+    "id" : "29E796B0",
+    "lastKnownWriteTime" : 1556733985,
+    "last_content_update" : 1556733985,
+    "path" : "~/Documents/AllThingsR/RKelly/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}

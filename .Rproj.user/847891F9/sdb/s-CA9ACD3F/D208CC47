@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "\nlibrary(devtools)\nlibrary(RKelly)\n\nkelly_back_dec <- function(price,p, commision_rate){\n    alpha_w = (1-commision_rate)*(price-1)\n    print(alpha_w)\n    alpha_l = 1\n    fraction = kelly_criterion(p, alpha_w = alpha_w, alpha_l = alpha_l)\n    return(fraction)\n}\n\n\nkelly_lay_dec <- function(price, p, commision_rate){\n    p <- 1-p\n    alpha_w <- (1-commision_rate)\n    alpha_l <- price-1\n    fraction <- kelly_criterion(p, alpha_w = alpha_w, alpha_l = alpha_l)\n    return(fraction)\n}\n",
+    "created" : 1555238924345.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "153505547",
+    "id" : "D208CC47",
+    "lastKnownWriteTime" : 1555786834,
+    "last_content_update" : 1555786834123,
+    "path" : "~/Documents/AllThingsR/RKelly/scrap.R",
+    "project_path" : "scrap.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

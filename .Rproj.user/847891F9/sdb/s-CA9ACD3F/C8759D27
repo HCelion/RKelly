@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "^.*\\.Rproj$\n^\\.Rproj\\.user$\n^scrap.R$\n",
+    "created" : 1555786848797.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1095798758",
+    "id" : "C8759D27",
+    "lastKnownWriteTime" : 1555238899,
+    "last_content_update" : 1555238899,
+    "path" : "~/Documents/AllThingsR/RKelly/.Rbuildignore",
+    "project_path" : ".Rbuildignore",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}
