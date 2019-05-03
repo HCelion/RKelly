@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "^.*\\.Rproj$\n^\\.Rproj\\.user$\n^scrap.R$\n",
+    "contents" : "^Meta$\n^doc$\n^.*\\.Rproj$\n^\\.Rproj\\.user$\n^scrap.R$\n",
     "created" : 1555786848797.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1095798758",
+    "hash" : "1456153406",
     "id" : "C8759D27",
-    "lastKnownWriteTime" : 1555238899,
-    "last_content_update" : 1555238899,
+    "lastKnownWriteTime" : 1556736450,
+    "last_content_update" : 1556736450,
     "path" : "~/Documents/AllThingsR/RKelly/.Rbuildignore",
     "project_path" : ".Rbuildignore",
     "properties" : {
